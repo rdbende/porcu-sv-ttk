@@ -1,5 +1,5 @@
 # porcu-sv-ttk
-Plugin to use the Sun Valley ttk theme in Porcupine
+Plugin to use the Sun Valley ttk theme in [Porcupine](https://github.com/Akuli/porcupine)
 
 ## Installation
 
