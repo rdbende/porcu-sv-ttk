@@ -28,6 +28,6 @@ def setup() -> None:
 
     get_tab_manager().bind(
         "<<GlobalSettingChanged:sv_theme>>",
-        lambda event: set_theme(global_settings.get("sv_theme", str)) or print("semmiség"),
+        lambda event: set_theme(global_settings.get("sv_theme", str)),
         add=True,
     )
