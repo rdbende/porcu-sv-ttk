@@ -1,12 +1,10 @@
 """Use Sun Valley ttk theme in Porcupine"""
 from pathlib import Path
 
-from porcupine import get_main_window, get_tab_manager
-from porcupine import settings
+import sv_ttk
+from porcupine import get_main_window, get_tab_manager, settings
 from porcupine.settings import global_settings
 
-
-import sv_ttk
 
 def set_theme(theme) -> None:
     main_window = get_main_window()
@@ -18,12 +16,13 @@ def set_theme(theme) -> None:
     main_window.option_add("*Combobox.state", "readonly")
 
 
-
 def setup() -> None:
     main_window = get_main_window()
 
     global_settings.add_option("sv_theme", "Dark")
-    settings.add_combobox("sv_theme", "UI theme", values=["Dark", "Light"], state="readonly")
+    settings.add_combobox(
+        "sv_theme", "UI theme", values=["Dark", "Light"], state="readonly"
+    )
     set_theme(global_settings.get("sv_theme", str))
 
     get_tab_manager().bind(
