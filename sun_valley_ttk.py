@@ -13,7 +13,6 @@ def set_theme(theme) -> None:
     main_window.option_add("*Text.highlightThickness", "0")
     main_window.option_add("*Text.borderWidth", "1")
     main_window.option_add("*Text.relief", "solid")
-    main_window.option_add("*Combobox.state", "readonly")
 
 
 def setup() -> None:
