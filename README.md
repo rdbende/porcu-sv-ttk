@@ -1,3 +1,6 @@
+> ## Deprecated
+> This is now a built-in plugin in Porcupine
+
 # porcu-sv-ttk
 Plugin to use the Sun Valley ttk theme in [Porcupine](https://github.com/Akuli/porcupine)
 
